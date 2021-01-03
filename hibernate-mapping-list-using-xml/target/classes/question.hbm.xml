@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    
+    <class name="me.khun.hibernate.entity.Question" table="question">
+        <id name="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="questionText">
+            <column name="question_text"></column>
+        </property>
+        <list name="answers" table="answer">
+            <key column="question_id"></key>
+            <index column="number"></index>
+            <element column="answer" type="string"></element>
+        </list>
+    </class>
+
+</hibernate-mapping>
