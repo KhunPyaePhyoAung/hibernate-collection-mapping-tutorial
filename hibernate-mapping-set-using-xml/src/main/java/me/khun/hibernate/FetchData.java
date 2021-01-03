@@ -35,6 +35,6 @@ public class FetchData {
                 System.out.printf("%d) %s%n", i,answer);
             }
         }
-
+        session.close();
     }
 }
