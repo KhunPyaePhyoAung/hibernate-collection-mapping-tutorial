@@ -12,7 +12,7 @@ We can map collection elements of Persistent class in Hibernate. You need to dec
 
 The persistent class should be defined like this for collection element.
 
-        package com.javatpoint;
+        package com.package;
             
         import java.util.List;
             
@@ -40,7 +40,7 @@ The collection elements can be categorized in two forms:
 The List and Map collection are indexed whereas set and bag collections are non-indexed. Here, indexed collection means List and Map requires an additional element  **<index>**.
 <hr>
 
-### Collection Elements
+## Collection Elements
 
 The collection elements can have value or entity reference (another class object). We can use one of the 4 elements
 
